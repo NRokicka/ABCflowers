@@ -126,7 +126,15 @@ article img {
 section {
     padding: 2%;
     min-height: 50vh;
-background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9);
+}
+.portfolio_container {
+    display: flex;
+    
+}
+.portfolio_first {
+    background: url(../images/flower.jpg) center center no-repeat;
+    background-size: cover;
 }
 footer {
     display: flex;
