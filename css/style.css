@@ -11,18 +11,18 @@ body {
     background-image: url("../images/flower.jpg");
     min-height: 30vh;
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+  
 }
 header {
     background: rgba(34, 34, 34, 0.8); 
 }
 
 p {
-color: #222;
-text-align: center;
-font-size: 1.2rem;
-font-family: 'Marck Script', cursive;
+    padding: 2%;
+    color: #222;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Marck Script', cursive;
 }
 
 h1{
@@ -74,8 +74,8 @@ nav ul {
 nav li {
     flex: 1;
 }
-.smooth {
- color: #222;
+.btn_porfolio {
+  color: #222;
   cursor: pointer;
   width: 40%;
   background: rgba(255, 255, 255, 0.7);
@@ -89,7 +89,7 @@ nav li {
   transition: all 0.5s ease-out;
 }
 
-.smooth:hover {
+.btn_porfolio:hover {
   background: rgba(255, 255, 255, 1);
   text-decoration: none;
 }
@@ -103,26 +103,11 @@ aside {
     border: 1px solid;
     color: #fff;
 }
+
 article {
-    margin-top: 5%;
-    padding: 2%;
+    margin-top: 2%;
     background: rgba(255, 255, 255, 0.9);
 }
-.article_img {
-    display: flex;
-    justify-content: space-around;
-    margin:5%;
-}
-.article_descr {
-    position: relative;
-    left: -10%;
-}
-
-article img {
-    width: 25%;
-    height: 25%;
-}
-
 section {
     padding: 2%;
     min-height: 50vh;
@@ -132,8 +117,29 @@ section {
     display: flex;
     
 }
-.portfolio_first {
-    background: url(../images/flower.jpg) center center no-repeat;
+.portfolio {
+    padding: 0;
+    height: 80vh;
+    flex: 1;
+}
+.p_cover {
+    background: rgba(255,255,255,0.3);
+    height: 100%;
+    transition: all 1s ease-out;
+}
+.p_cover:hover {
+    background: rgba(34, 34, 34,0.6);
+}
+.p_first {
+    background: url(../images/flowers_wed2.png) center center no-repeat;
+    background-size: cover;
+}
+.p_second {
+    background: url(../images/flowers_desk.png) center center no-repeat;
+    background-size: cover;
+}
+.p_third {
+    background: url(../images/flowers_desk1.png) center center no-repeat;
     background-size: cover;
 }
 footer {
@@ -164,11 +170,13 @@ footer small {
     #title {
         font-size: 1rem;
     }
-    article img {
-       width: 40%;
-       height: 40%;
+   .article_img {
+    flex-direction: column;
+    margin: 0 auto;
 }
-    
+ 
+
+   
 }
 
 @media all and (max-width: 470px) {
@@ -191,6 +199,7 @@ footer small {
     padding: 10px 0;
     
 }
+ 
 footer {
     
     flex-direction: column;
@@ -203,17 +212,6 @@ footer p {
     order: 1;
     display: flex;
 }
-.article_img {
-    flex-direction: column;
-    margin: 0 auto;
-}
- article img {
-       width: 100%;
-       height: 100%;
-       
-}
-.article_descr {
-    left: 0;
-}
+
    
 }
