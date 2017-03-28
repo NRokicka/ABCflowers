@@ -107,15 +107,30 @@ aside {
 article {
     margin-top: 2%;
     background: rgba(255, 255, 255, 0.9);
+    
+ 
 }
 section {
     padding: 2%;
     min-height: 50vh;
-    background: rgba(255, 255, 255, 0.9);
+    
+}
+.about {
+    
+}
+.about img {
+    width: 60%;
+    height: 60%;
+    padding-left: 70px;
+}
+.about_disc {
+    position: relative;
+    left:  -100px;
+   
 }
 .portfolio_container {
-    display: flex;
     
+    display: flex;
 }
 .portfolio {
     padding: 0;
@@ -164,6 +179,7 @@ footer small {
     color: rgba(0, 0, 0, 0.3);
 }
 @media all and (max-width: 768px) {
+    
     h1 {
     font-size: 1.8rem
     }
@@ -174,12 +190,22 @@ footer small {
     flex-direction: column;
     margin: 0 auto;
 }
- 
+.about {
+    flex-direction: column;
+    margin: 0 auto;
+}
+
 
    
 }
 
 @media all and (max-width: 470px) {
+     
+    section {
+    
+    min-height: 2vh;
+    
+}
     h1 {
         font-size: 1.4rem;
     }
@@ -199,6 +225,7 @@ footer small {
     padding: 10px 0;
     
 }
+
  
 footer {
     
