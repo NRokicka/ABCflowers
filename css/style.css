@@ -8,7 +8,7 @@ body {
     font-size: 0.875em;
     line-height: 1.6em;
     color: #222;
-    background-image: url("../images/flower.jpg");
+    background-image: url("../images/flower1.jpg");
     min-height: 30vh;
     background-attachment: fixed;
   
@@ -30,15 +30,14 @@ h1{
     color: #fff;
     text-shadow: black 0.1em 0.1em 0.2em;
     text-transform: uppercase;
-    font-family: serif;
+   font-family: 'Marck Script', cursive;
     text-align: center;
 }
 h2 {
     font-size: 1rem;
-    color: #222;
+    color: #fff;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Marck Script', cursive;
 }
 
 nav a {
@@ -96,6 +95,8 @@ nav li {
 aside {
     margin: 0 auto;
     width: 60%;
+   min-height: 50vh;
+   padding-bottom: 2%;
 }
 .aside_title {
     margin: 7%;
@@ -105,28 +106,12 @@ aside {
 }
 
 article {
-    margin-top: 2%;
+   
     background: rgba(255, 255, 255, 0.9);
-    
  
 }
 section {
-    padding: 2%;
-    min-height: 50vh;
-    
-}
-.about {
-    
-}
-.about img {
-    width: 60%;
-    height: 60%;
-    padding-left: 70px;
-}
-.about_disc {
-    position: relative;
-    left:  -100px;
-   
+     min-height: 35vh;
 }
 .portfolio_container {
     
@@ -157,6 +142,60 @@ section {
     background: url(../images/flowers_desk1.png) center center no-repeat;
     background-size: cover;
 }
+.vazonky {
+   
+  height: 400px;
+}
+.items-row {
+  display: -webkit-flex;
+  display:     -ms-flexbox;
+  display:         flex;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100%;
+  height: 100%;
+}
+.item {
+  margin: 2px;
+  border: 1px solid #dddddd;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+
+  -webkit-flex: 1 1 20%;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
+  transition: flex 0.4s ease;
+}
+.item:hover {
+  -webkit-flex: 0.000000001 0.00000001 400px;
+      -ms-flex: 0.000000001 0.00000001 400px;
+          flex: 0.000000001 0.00000001 400px;
+  background-size: 100% 100%
+}
+
+.img1 {
+  background-image: url('http://lorempixel.com/400/400/?1');
+  background-repeat: no-repeat;
+}
+.img2 {
+  background-image: url('http://lorempixel.com/400/400/?2');
+  background-repeat: no-repeat;
+}
+.img3 {
+  background-image: url('http://lorempixel.com/400/400/?3');
+  background-repeat: no-repeat;
+}
+.img4 {
+  background-image: url('http://lorempixel.com/400/400/?4');
+  background-repeat: no-repeat;
+}
+.img5 {
+  background-image: url('http://lorempixel.com/400/400/?5');
+  background-repeat: no-repeat;
+}
+
+
 footer {
     display: flex;
     align-items: flex-end;
@@ -183,18 +222,7 @@ footer small {
     h1 {
     font-size: 1.8rem
     }
-    #title {
-        font-size: 1rem;
-    }
-   .article_img {
-    flex-direction: column;
-    margin: 0 auto;
-}
-.about {
-    flex-direction: column;
-    margin: 0 auto;
-}
-
+    
 
    
 }
